@@ -3,7 +3,11 @@ import { projectsData } from '../data/projectsData';
 
 const Project = (props) => {
 	const [currentProject] = useState(projectsData);
-	const project = currentProject[props.projectNumber]
+	const project = currentProject[props.projectNumber];
+
+	let left = Math.floor(Math.random() * 200 + 700) + "px";
+	let top = Math.floor(Math.random() * 200 + 150) + "px";
+	let transform = "scale(" + (Math.random() + 0.7) + ")";
 
 	return (
 		<div className="project-main">
@@ -25,11 +29,12 @@ const Project = (props) => {
 					<img src={project.img} alt={project.title} />
 				</div>
 					<div className="button-container">
-						<a href={project.link} target="_blank" rel="noopener noreferrer" classNAme="hover">
+						<a href={project.link} target="_blank" rel="noopener noreferrer" className="hover">
 							<span className="button">Voir le site</span>
 						</a>
 				</div>
 			</div>
+			<span className="random-circle" style={{left, top, transform}}></span>
 		</div>
 	);
 };
