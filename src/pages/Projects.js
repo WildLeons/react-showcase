@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../components/Logo';
 import Navigation from './../components/Navigation';
 import BottomButtons from '../components/BottomButtons';
 
@@ -7,6 +8,7 @@ export const Project1 = () => {
 		<main>
 			<div className="project">
 				<Navigation />
+				<Logo />
 				Project 1
 				<BottomButtons left={"/"} right= {"/project-2"} />
 			</div>
@@ -19,6 +21,7 @@ export const Project2 = () => {
 		<main>
 			<div className="project">
 				<Navigation />
+				<Logo />
 				Project 2
 				<BottomButtons left={"/project-1"} right={"/project-3"} />
 			</div>
@@ -31,6 +34,7 @@ export const Project3 = () => {
 		<main>
 			<div className="project">
 				<Navigation />
+				<Logo />
 				Project 3
 				<BottomButtons left={"/project-2"} right={"/project-4"} />
 			</div>
@@ -43,6 +47,7 @@ export const Project4 = () => {
 		<main>
 			<div className="project">
 				<Navigation />
+				<Logo />
 				Project 4
 				<BottomButtons left={"/project-3"} right={"/contact"} />
 			</div>
