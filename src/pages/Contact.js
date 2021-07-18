@@ -7,7 +7,7 @@ const Contact = () => {
 		<div>
 			<Navigation />
 			Contact
-			<BottomButtons left="/project-4" />
+			<BottomButtons left={"/project-4"} />
 		</div>
 	);
 };
