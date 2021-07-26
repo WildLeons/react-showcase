@@ -39,10 +39,12 @@ const Home = () => {
 
 				<div className='home-main'>
 					<div className='main-content'>
-						<h1>FS AGENCY</h1>
-						<h2>
+						<motion.h1 drag onDragEnd>
+							FS AGENCY
+						</motion.h1>
+						<motion.h2 drag onDragEnd>
 							<DynamicText />
-						</h2>
+						</motion.h2>
 					</div>
 				</div>
 
