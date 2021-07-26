@@ -24,6 +24,13 @@ const Home = () => {
 		},
 	};
 
+	const dragConstraints = {
+		left: -250,
+		right: 950,
+		top: -200,
+		bottom: 250,
+	};
+
 	return (
 		<main>
 			<motion.div
@@ -39,10 +46,10 @@ const Home = () => {
 
 				<div className='home-main'>
 					<div className='main-content'>
-						<motion.h1 drag onDragEnd>
+						<motion.h1 drag onDragEnd dragConstraints={dragConstraints}>
 							FS AGENCY
 						</motion.h1>
-						<motion.h2 drag onDragEnd>
+						<motion.h2 drag onDragEnd dragConstraints={dragConstraints}>
 							<DynamicText />
 						</motion.h2>
 					</div>
